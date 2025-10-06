@@ -12,16 +12,18 @@ esenciales para garantizar la trazabilidad y la comunicación entre el cliente, 
 
 ## Documentación General del Proyecto
 
-[Archivo MarkDown](Documentacion/v2/Documentacion_Jewelry_Workshop_v2.md)
+[Ver Archivo MarkDown](Documentacion/v2/Documentacion_Jewelry_Workshop_v2.md)
 |
-[Diagramas individuales](Informes/assets/Diagramas/)
+[Ver Diagramas individuales](Informes/assets/Diagramas/)
 
 ### Asignatura: ``` Modelos y Documentación del Software ```
 ### Docente: ``` Ing. Hely Suarez Marin ```
 
 ## Documentación de la Base de Datos
 
-[Archivo MarkDown](Documentacion/v2/)
+[Ver Archivo MarkDown](Documentacion/v2/)
+|
+[Ver Diagrama ER](ER/jewelry_workshop_v2.png)
 
 ### Asignatura: ``` Bases de Datos ```
 ### Docente: ``` Ing. Hely Suarez Marin ```

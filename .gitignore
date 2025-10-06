@@ -1,6 +1,7 @@
 consultas.sql
-/Informes/Informe_Consultas_SQL_Joyeria_01.pdf
-/Informes/Informe_Base_Datos_Taller_Joyeria_01.pdf
+/Informes/*
+!/Informes/assets
 /Documentacion/v1/*
-/Documentacion/v2/Documentacion_Jewelry_Workshop_v2.docx
+/Documentacion/v2/*
+!/Documentacion/v2/Documentacion_Jewelry_Workshop_v2.md
 /ER/jewelry_workshop_v1.png
