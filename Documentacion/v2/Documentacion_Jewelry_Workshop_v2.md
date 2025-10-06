@@ -1,12 +1,12 @@
-**Proyecto de Taller de Joyería -- Avance del Proyecto Segundo Parcial**
+# **Proyecto de Taller de Joyería -- Avance del Proyecto Segundo Parcial**
 
-**Modelos y Documentación del Software**
+## **Modelos y Documentación del Software**
 
-**Docente:**
+### **Docente:**
 
 Ing. Hely Suarez Marin
 
-**Integrantes:**
+### **Integrantes:**
 
 -   Nick Alejandro Ortega Méndez
 
@@ -16,7 +16,7 @@ Ing. Hely Suarez Marin
 
 Octubre / 5 / 2025
 
-**Problema**
+## **Problema**
 
 Los talleres de joyería artesanal enfrentan actualmente un desafío
 creciente en la gestión de su información. A medida que aumenta la
@@ -39,7 +39,7 @@ posibles cuellos de botella en los procesos. En consecuencia, el taller
 se vuelve vulnerable a la improvisación y la desinformación, reduciendo
 su competitividad y credibilidad ante los clientes.
 
-**Solución**
+## **Solución**
 
 Frente a esta problemática, se propone implementar una plataforma web
 sencilla y centralizada que permita estandarizar el flujo completo del
@@ -75,7 +75,7 @@ comunicación entre las distintas áreas, reducir la dependencia de
 procesos manuales y ofrecer un entorno más confiable y organizado para
 la gestión de cada joya fabricada.
 
-**Impacto**
+## **Impacto**
 
 La implementación de este sistema tendrá un doble impacto positivo en el
 taller:
@@ -93,7 +93,7 @@ taller:
 
 ---
 
-1.  **Resumen del Problema**
+### 1.  **Resumen del Problema**
 
 Los talleres de joyería artesanal enfrentan un serio desafío con la
 gestión manual y dispersa de su información. Esta falta de un sistema
@@ -104,7 +104,7 @@ desorganización impide medir la productividad y analizar el desempeño,
 reduciendo la competitividad y la capacidad de planificar eficientemente
 el negocio.
 
-2.  **Posible solución (plataforma de pedidos personalizados)**
+### 2.  **Posible solución (plataforma de pedidos personalizados)**
 
 Se propone el desarrollo de una plataforma web centralizada y sencilla
 para administrar integralmente los pedidos de joyería personalizados. El
@@ -117,7 +117,7 @@ Viable (MVP), concentrando solo las funciones esenciales. Este enfoque
 permitirá validar rápidamente la eficacia del sistema y medir su impacto
 real en la digitalización del taller.
 
-**Alcance (MVP)**
+## **Alcance (MVP)**
 
 -   Registrar pedidos con descripción, materiales de referencia y
     observaciones específicas del cliente.
@@ -136,26 +136,37 @@ real en la digitalización del taller.
 -   Mantener trazabilidad básica, registrando quién realizó cada acción
     y en qué momento.
 
-**Actores y Funciones**
+## **Actores y Funciones**
 
-  -----------------------------------------------------------------------
-  **Actor**                **Funciones principales**
-  ------------------------ ----------------------------------------------
-  Cliente:                  Revisa y aprueba presupuestos, consulta el
-                           estado de su pedido y visualiza los avances.
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>Actor</th>
+                <th>Funciones principales</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Cliente</td>
+                <td>Revisa y aprueba presupuestos, consulta el estado de su pedido y visualiza los avances.</td>
+            </tr>
+            <tr>
+                <td>Asesor</td>
+                <td>Crea nuevos pedidos, sube bocetos o diseños, emite presupuestos y gestiona la entrega final al cliente.</td>
+            </tr>
+            <tr>
+                <td>Maestro joyero</td>
+                <td>Recibe los pedidos aprobados, fabrica las piezas y actualiza el estado del trabajo a "Listo".</td>
+            </tr>
+            <tr>
+                <td>Administrador (opcional)</td>
+                <td>Supervisa la operación general del sistema, gestiona usuarios, permisos y catálogos de referencia.</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
 
-  Asesor:                  Crea nuevos pedidos, sube bocetos o diseños,
-                           emite presupuestos y gestiona la entrega final
-                           al cliente.
-
-  Maestro joyero:        Recibe los pedidos aprobados, fabrica las
-                           piezas y actualiza el estado del trabajo a
-                           "Listo".
-
-  Administrador (opcional):  Supervisa la operación general del sistema,
-                           gestiona usuarios, permisos y catálogos de
-                           referencia.
-  -----------------------------------------------------------------------
 
 **Reglas Clave del Sistema**
 
@@ -170,11 +181,10 @@ real en la digitalización del taller.
 -   Todos los cambios deben quedar registrados con fecha, hora y usuario
     responsable, para garantizar la trazabilidad.
 
-3.  ![](media/image1.png){width="5.208333333333333in"
-    height="3.9055555555555554in"}
-    
-**Descripción general del proceso**
+## 3. **Descripción general del proceso**
 
+   ![Flujo de Proceso](https://github.com/OrtegaNidddd/jewelry_workshop/blob/main/Informes/assets/Flujo_del_proceso.png)
+    
 El flujo inicia con la solicitud del cliente, donde se registran los
 requerimientos iniciales. Posteriormente, el equipo realiza el diseño y
 genera un presupuesto asociado al pedido. Una vez que el cliente revisa
@@ -184,7 +194,7 @@ asegura el cumplimiento de los estándares acordados. Finalmente, se
 realiza la entrega al cliente, cerrando el ciclo de manera trazable y
 organizada.
 
-4.  **Revisión / Investigación de Verificabilidad**
+## 4.  **Revisión / Investigación de Verificabilidad**
 
 Se observo un taller artesanal de joyería que opera actualmente sin un
 sistema formal. Los pedidos se inician a través de mensajes directos en
@@ -195,10 +205,11 @@ control de versiones para los diseños y aprobaciones implícitas (como un
 y malentendidos sobre detalles de grabado y tamaños (anillos, cadenas,
 etc.), llevando a retrasos en las fechas de entrega.
 
-5.  **Diagramas UML realizados**
+## 5.  **Diagramas UML realizados**
 
-    5.  ![](media/image2.png){width="7.56716426071741in"
-        height="1.0833333333333333in"}**Casos de Uso**
+### 5.1 **Casos de Uso**
+
+![Diagrama Casos de Uso](https://github.com/OrtegaNidddd/jewelry_workshop/blob/main/Informes/assets/Diagramas/casos_de_uso.png)
 
 El diagrama de casos de uso representa las acciones principales que
 realizan los distintos actores dentro de la plataforma de pedidos
@@ -226,54 +237,59 @@ El diagrama muestra también las relaciones entre los casos de uso y con
 esto se visualiza claramente quién interviene en cada etapa y cómo se
 conectan las acciones entre sí dentro del sistema.
 
-> ![](media/image3.png){width="3.3854166666666665in"
-> height="5.925in"}5.2 **Actividades**
->
-> El diagrama de actividades detalla el flujo secuencial y completo de
-> un pedido de joyería, desde la solicitud del cliente hasta la entrega
-> final de la pieza.
->
-> El proceso se inicia con la Solicitud del Cliente, seguida del
-> Registro del Pedido y la carga del diseño por el asesor. La etapa
-> clave es la Revisión y Aprobación del Presupuesto por el cliente. Si
-> es rechazado, se ajusta el diseño o el costo; si es aprobado, el
-> pedido pasa a Fabricación (a cargo del maestro joyero).
->
-> Finalmente, la joya terminada pasa por un riguroso Control de Calidad
-> antes de ser entregada al cliente, cerrando el proceso. Este diagrama
-> permite una visualización clara de los pasos y decisiones necesarios
-> para una gestión controlada.
->
-> ![](media/image4.png){width="4.7756944444444445in"
-> height="5.583333333333333in"}5.3 **Secuencia**
->
-> El diagrama muestra el flujo de interacción entre Cliente,
-> Asesor/Ventas, Sistema y Maestro Joyero.
->
-> Inicia con la solicitud del pedido, continúa con el registro, diseño y
-> presupuesto, y según la aprobación o rechazo, avanza a la fabricación,
-> control de calidad y entrega final, cerrando el proceso completo del
-> pedido.
+## 5.2 **Diagrama de Actividades**
 
-5.4 **Comunicación**
+![Diagrama de Actividades](https://github.com/OrtegaNidddd/jewelry_workshop/blob/main/Informes/assets/Diagramas/actividades.png)
 
-![](media/image5.png){width="7.502083333333333in"
-height="1.65625in"}5.4.1 **Comunicación aprobado**
+El diagrama de actividades detalla el flujo secuencial y completo de
+un pedido de joyería, desde la solicitud del cliente hasta la entrega
+final de la pieza.
+
+El proceso se inicia con la Solicitud del Cliente, seguida del
+Registro del Pedido y la carga del diseño por el asesor. La etapa
+clave es la Revisión y Aprobación del Presupuesto por el cliente. Si
+es rechazado, se ajusta el diseño o el costo; si es aprobado, el
+pedido pasa a Fabricación (a cargo del maestro joyero).
+
+Finalmente, la joya terminada pasa por un riguroso Control de Calidad
+antes de ser entregada al cliente, cerrando el proceso. Este diagrama
+permite una visualización clara de los pasos y decisiones necesarios
+para una gestión controlada.
+
+## 5.3 **Diagrama de Secuencia**
+
+![Diagrama de Secuencia](https://github.com/OrtegaNidddd/jewelry_workshop/blob/main/Informes/assets/Diagramas/secuencia.drawio.png)
+
+El diagrama muestra el flujo de interacción entre Cliente,
+Asesor/Ventas, Sistema y Maestro Joyero.
+
+Inicia con la solicitud del pedido, continúa con el registro, diseño y
+presupuesto, y según la aprobación o rechazo, avanza a la fabricación,
+control de calidad y entrega final, cerrando el proceso completo del
+pedido.
+
+## 5.4 **Diagrama de Comunicación**
+
+### 5.4.1 **Comunicación aprobado**
+
+![Diagrama de Comunicación aprobado](https://github.com/OrtegaNidddd/jewelry_workshop/blob/main/Informes/assets/Diagramas/comunicacion_aprobado.drawio.png)
 
 Muestra la comunicación entre Cliente, Asesor, Sistema y Maestro Joyero
 durante el proceso normal del pedido: desde la solicitud y registro,
 pasando por la aprobación del presupuesto, la fabricación, el control de
 calidad y la entrega final.
 
-![](media/image6.png){width="6.5in" height="0.8145833333333333in"}5.4.2
-**Comunicación rechazado**
+### 5.4.2 **Comunicación rechazado**
+
+![Diagrama de Comunicación rechazado](https://github.com/OrtegaNidddd/jewelry_workshop/blob/main/Informes/assets/Diagramas/comunicacion_rechazado.drawio.png)
 
 Representa el camino alternativo cuando el cliente rechaza el
 presupuesto: el sistema notifica al asesor, quien realiza ajustes en el
 diseño o costo y vuelve a enviarlo al cliente para una nueva revisión.
 
-![](media/image7.png){width="6.5in" height="1.913888888888889in"}5.5
-**Paquetes**
+## 5.5 **Diagrama de Paquetes**
+
+![Diagrama de Paquetes](https://github.com/OrtegaNidddd/jewelry_workshop/blob/main/Informes/assets/Diagramas/paquetes.drawio.png)
 
 El diagrama de paquetes muestra la organización modular del sistema,
 dividida en tres capas: Presentación, donde interactúan los usuarios;
@@ -282,8 +298,9 @@ fabricaciones; y Datos, donde se almacenan clientes, pedidos, diseños y
 entregas. Representa una arquitectura clara y jerárquica que facilita el
 mantenimiento y la trazabilidad del sistema.
 
-![](media/image8.png){width="4.0625in" height="4.688194444444444in"}5.6
-**Clases**
+## 5.6 **Diagrama de Clases**
+
+![Diagrama de Paquetes](https://github.com/OrtegaNidddd/jewelry_workshop/blob/main/Informes/assets/Diagramas/clases.drawio.png)
 
 El diagrama de clases representa las entidades reales del sistema y cómo
 se relacionan entre sí.\
@@ -294,11 +311,9 @@ Entrega.\
 Cada clase muestra sus atributos principales, reflejando la estructura
 de la base de datos **jewelry_workshop.**
 
-**\
-**
+## 5.7 **Diagrama de Objetos**
 
-![](media/image9.png){width="7.898611111111111in"
-height="1.7513888888888889in"}5.7 **Objetos**
+![Diagrama de Objetos](https://github.com/OrtegaNidddd/jewelry_workshop/blob/main/Informes/assets/Diagramas/objetos.drawio.png)
 
 El diagrama de objetos muestra instancias reales de la base de datos,
 representando ejemplos concretos de clientes, asesores, pedidos,
@@ -310,8 +325,9 @@ Fabricación.\
 Refleja el estado actual del sistema, mostrando las relaciones activas
 entre las entidades en un momento específico.
 
-![](media/image10.png){width="5.844827209098862in"
-height="5.3421478565179354in"}5.8 **Estados**
+## 5.8 **Diagrama de Estados**
+
+![Diagrama de Estados](https://github.com/OrtegaNidddd/jewelry_workshop/blob/main/Informes/assets/Diagramas/estados.drawio.png)
 
 El diagrama de estados representa el ciclo de vida completo de un pedido
 dentro del sistema.\
@@ -322,8 +338,9 @@ completa y cierra el proceso.\
 Refleja de forma clara cómo el sistema controla la evolución y los
 posibles resultados de un pedido.
 
-![](media/image11.png){width="6.5in" height="4.424305555555556in"}5.9
-**Tiempo**
+## 5.9 **Diagrama de Tiempo**
+
+![Diagrama de Tiempo](https://github.com/OrtegaNidddd/jewelry_workshop/blob/main/Informes/assets/Diagramas/tiempo.png)
 
 El diagrama de tiempo muestra cómo las acciones de cada actor
 evolucionan cronológicamente durante el ciclo de vida de un pedido.\
@@ -333,8 +350,9 @@ fabrica la pieza.\
 Cada cambio refleja el estado de los participantes a lo largo del
 proceso, desde la solicitud inicial hasta la entrega final.
 
-![](media/image12.png){width="7.021527777777778in"
-height="2.982638888888889in"}5.10 **Componentes**
+## 5.10 **Diagrama de Componentes**
+
+![Diagrama de Componentes](https://github.com/OrtegaNidddd/jewelry_workshop/blob/main/Informes/assets/Diagramas/componentes.png)
 
 El diagrama organiza la solución en capas:
 
@@ -349,8 +367,9 @@ El diagrama organiza la solución en capas:
     Esta estructura separa responsabilidades, facilita mantenimiento y
     alinea la app con tu modelo de datos.
 
-![](media/image13.png){width="6.920138888888889in"
-height="2.3020833333333335in"}5.11 **Instalación**
+## 5.11 **Diagrama de Instalación**
+
+![Diagrama de Instalación](https://github.com/OrtegaNidddd/jewelry_workshop/blob/main/Informes/assets/Diagramas/instalacion.png)
 
 El diagrama de instalación muestra la distribución física del sistema,
 donde los usuarios (cliente, asesor y administrador) acceden desde
@@ -361,11 +380,9 @@ datos jewelry_workshop.\
 Refleja la estructura real de instalación del sistema, indicando los
 componentes y las comunicaciones necesarias para su funcionamiento.
 
-**\
-**
+## 5.12 **Diagrama de Despliegue**
 
-![](media/image14.png){width="4.763888888888889in"
-height="3.08125in"}5.12 **Despliegue**
+![Diagrama de Despliegue](https://github.com/OrtegaNidddd/jewelry_workshop/blob/main/Informes/assets/Diagramas/despliegue.png)
 
 El diagrama de despliegue muestra la estructura física del sistema,
 donde el usuario final accede desde un navegador web al servidor
