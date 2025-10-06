@@ -14,7 +14,7 @@ Ing. Hely Suarez Marin
 
 -   Johel Alexander Velasco Guerrero
 
-Octubre / 5 / 2025
+Octubre / 7 / 2025
 
 ## **Problema**
 
@@ -300,7 +300,7 @@ mantenimiento y la trazabilidad del sistema.
 
 ## 5.6 **Diagrama de Clases**
 
-![Diagrama de Paquetes](https://github.com/OrtegaNidddd/jewelry_workshop/blob/main/Informes/assets/Diagramas/clases.drawio.png)
+![Diagrama de Clases](https://github.com/OrtegaNidddd/jewelry_workshop/blob/main/Informes/assets/Diagramas/clases.drawio.png)
 
 El diagrama de clases representa las entidades reales del sistema y cómo
 se relacionan entre sí.\
