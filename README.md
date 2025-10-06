@@ -21,7 +21,7 @@ esenciales para garantizar la trazabilidad y la comunicación entre el cliente, 
 
 ## Documentación de la Base de Datos
 
-[Ver Archivo MarkDown](Documentacion/v2/)
+[Ver Archivo MarkDown](Documentacion/v2/Documentacion_Base_BD_v2.md)
 |
 [Ver Diagrama ER](ER/jewelry_workshop_v2.png)
 
