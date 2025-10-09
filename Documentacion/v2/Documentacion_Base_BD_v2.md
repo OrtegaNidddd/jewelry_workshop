@@ -167,7 +167,7 @@ conectan las acciones entre sí dentro del sistema
 
 ## 3.2 **Diagrama de Clases**
 
-![Diagrama de Clases](https://github.com/OrtegaNidddd/jewelry_workshop/blob/main/Informes/assets/Diagramas/clases.drawio.png)
+![Diagrama de Clases](https://github.com/OrtegaNidddd/jewelry_workshop/blob/main/Informes/assets/Diagramas/clases.png)
 
 El diagrama de clases representa las entidades reales del sistema y cómo
 se relacionan entre sí.\
