@@ -4,8 +4,10 @@
 !/Informes/assets/clases.drawio.png
 !/Informes/assets/casos_de_uso.png
 !/Documentacion/v2/Documentacion_Jewelry_Workshop_v2.md
+!/Documentacion/v2/Documentacion_Base_BD_v2.md
 /sql
 /Informes/*
 /Documentacion/v1/*
 /Documentacion/v2/*
 /ER/jewelry_workshop_v1.png
+/sql
