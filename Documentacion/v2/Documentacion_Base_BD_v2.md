@@ -178,18 +178,10 @@ Entrega.\
 Cada clase muestra sus atributos principales, reflejando la estructura
 de la base de datos **jewelry_workshop.**\
 
-## 3.3 **Diagrama de Estados**
+## 3.3 **Diagrama de Secuencia**
 
-![Diagrama de Estados](https://github.com/OrtegaNidddd/jewelry_workshop/blob/main/Informes/assets/Diagramas/estados.drawio.png)
+![Diagrama de Secuencia](https://github.com/OrtegaNidddd/jewelry_workshop/blob/main/Informes/assets/Diagramas/secuencia.drawio.png)
 
-El diagrama de estados representa el ciclo de vida completo de un pedido
-dentro del sistema.\
-Inicia en Creado, pasa a Cotizado, luego puede ser Aprobado o Cancelado
-según la decisión del cliente.\
-Si se aprueba, avanza a Fabricación y finalmente a Entregado, donde se
-completa y cierra el proceso.\
-Refleja de forma clara cómo el sistema controla la evolución y los
-posibles resultados de un pedido.
 
 # Relaciones
 
