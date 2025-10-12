@@ -1,11 +1,8 @@
-!/Informes/assets/estados.drawio.png
 !/sql/jewelry_workshop.sql
 !/sql/consultas.sql
-!/Informes/assets/Flujo_del_proceso-png
-!/Informes/assets/clases.drawio.png
-!/Informes/assets/casos_de_uso.png
 !/Documentacion/v2/Documentacion_Jewelry_Workshop_v2.md
 !/Documentacion/v2/Documentacion_Base_BD_v2.md
+!/Informes/assets/*
 /sql
 /Informes/*
 /Documentacion/v1/*

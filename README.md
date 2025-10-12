@@ -10,6 +10,15 @@ en un flujo de trabajo digital, trazable y organizado, que abarque desde la soli
 La plataforma se concibe inicialmente como un Producto Mínimo Viable (MVP) que se centra en las funcionalidades
 esenciales para garantizar la trazabilidad y la comunicación entre el cliente, el asesor y el maestro joyero.
 
+## Documentación General del Proyecto
+
+[Ver Archivo MarkDown](Documentacion/v2/Documentacion_Jewelry_Workshop_v2.md)
+|
+[Ver Diagramas individuales](Informes/assets/Diagramas/)
+
+### Asignatura: ``` Modelos y Documentación del Software ```
+### Docente: ``` Ing. Hely Suarez Marin ```
+
 ## Documentación de la Base de Datos
 
 [Ver Archivo MarkDown](Documentacion/v2/Documentacion_Base_BD_v2.md)
