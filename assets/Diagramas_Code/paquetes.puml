@@ -1,0 +1,44 @@
+@startuml Paquetes
+title Diagrama de Paquetes - Arquitectura logica
+
+package "Presentacion" as UI {
+  [Web]
+  [Componentes UI]
+}
+
+package "Aplicacion" as App {
+  [PedidosApp]
+  [DisenosApp]
+  [CotizacionesApp]
+  [NotificacionesApp]
+}
+
+package "Dominio" as Domain {
+  [Entidades]
+  [ServiciosDominio]
+  [EventosDominio]
+}
+
+package "Infraestructura" as Infra {
+  [API REST]
+  [Persistencia]
+  [Mensajeria]
+  [Storage]
+}
+
+database "BD Taller" as DB
+node "Bucket de archivos" as Bucket
+
+UI --> App : peticiones
+App --> Domain : reglas
+Domain --> Infra : puertos
+Infra --> Domain : implementa
+Infra --> DB
+Infra --> Bucket
+
+[PedidosApp] ..> [Entidades]
+[DisenosApp] ..> [Entidades]
+[CotizacionesApp] ..> [Entidades]
+[NotificacionesApp] ..> [EventosDominio]
+
+@enduml

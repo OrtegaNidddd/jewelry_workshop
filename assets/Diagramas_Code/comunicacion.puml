@@ -1,0 +1,23 @@
+@startuml Comunicacion
+title Diagrama de Comunicacion - Pedido
+
+object Cliente
+object Asesor
+object Disenador
+object Maestro
+object SistemaNotificaciones
+
+Cliente --> Asesor : 1. Solicitar pedido
+Asesor --> Disenador : 2. Pedir diseno
+Disenador --> Cliente : 3. Enviar boceto
+Cliente --> Asesor : 4. Aprobar diseno
+Asesor --> Asesor : 5. Calcular cotizacion
+Asesor --> Cliente : 6. Enviar cotizacion
+Cliente --> Asesor : 7. Aprobar cotizacion
+Asesor --> Maestro : 8. Asignar fabricacion
+Maestro --> Asesor : 9. Notificar pieza terminada
+Asesor --> SistemaNotificaciones : 10. Generar aviso
+SistemaNotificaciones --> Cliente : 11. Confirmar entrega
+Asesor --> Cliente : 12. Entregar pieza
+
+@enduml

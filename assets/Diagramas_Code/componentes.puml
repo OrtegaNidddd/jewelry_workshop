@@ -1,0 +1,47 @@
+@startuml Componentes
+title Componentes - Plataforma de pedidos
+
+actor Cliente
+actor Asesor
+actor Disenador
+actor Maestro
+
+component "Web App" as Web
+component "API Gateway" as API
+component "Servicio Autenticacion" as SAuth
+component "Servicio Pedidos" as SPedidos
+component "Servicio Disenos" as SDisenos
+component "Servicio Cotizaciones" as SCot
+component "Servicio Produccion" as SProd
+component "Servicio Notificaciones" as SNoti
+component "Almacen de archivos" as Storage
+component "Broker de eventos" <<queue>> as Broker
+database "BD Taller" as DB
+cloud "Correo / SMS" as Correo
+
+Cliente --> Web
+Asesor --> Web
+Disenador --> Web
+Maestro --> Web
+
+Web --> API
+API --> SAuth
+API --> SPedidos
+API --> SDisenos
+API --> SCot
+API --> SProd
+API --> SNoti
+
+SPedidos --> DB
+SDisenos --> DB
+SDisenos --> Storage
+SCot --> DB
+SProd --> DB
+SNoti --> Broker
+SPedidos --> Broker
+SProd --> Broker
+
+SNoti --> Correo : avisos
+API --> Storage : descarga bocetos
+
+@enduml

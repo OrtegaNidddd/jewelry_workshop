@@ -1,0 +1,53 @@
+@startuml Objetos
+title Diagrama de Objetos - Pedido de muestra
+
+object clienteJuan {
+  nombre = "Juan Perez"
+  contacto = "juan@example.com"
+}
+
+object pedido101 {
+  id = 101
+  estado = "EnFabricacion"
+  fecha = "2025-11-10"
+}
+
+object diseno101 {
+  version = 2
+  estado = "Aprobado"
+  descripcion = "Anillo oro 18k"
+}
+
+object cotizacion101 {
+  valor = 1200000
+  estado = "Aprobada"
+  validez = "2025-11-30"
+}
+
+object pieza101 {
+  material = "Oro 18k"
+  talla = "7"
+  fechaEntrega = "2025-11-24"
+}
+
+object asesorMaria {
+  nombre = "Maria"
+}
+
+object disenadorLuis {
+  nombre = "Luis"
+}
+
+object maestroCarlos {
+  nombre = "Carlos"
+}
+
+clienteJuan -- pedido101 : realiza
+pedido101 -- diseno101 : contiene
+pedido101 -- cotizacion101 : respalda
+pedido101 -- pieza101 : produce
+asesorMaria -- pedido101 : gestiona
+disenadorLuis -- diseno101 : crea
+maestroCarlos -- pieza101 : fabrica
+
+@enduml

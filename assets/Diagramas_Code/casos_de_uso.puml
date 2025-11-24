@@ -1,0 +1,71 @@
+@startuml CasosDeUso
+
+left to right direction
+
+actor Cliente
+actor Asesor
+actor Diseñador
+actor Maestro
+
+' === CASOS DE USO DEL CLIENTE ===
+Cliente --> (Realizar pedido)
+Cliente --> (Revisar estado del pedido)
+Cliente --> (Revisar diseño)
+Cliente --> (Revisar cotización)
+
+' === FLUJO DE PEDIDO ===
+(Realizar pedido) ..> (Recibir pedido) : <<include>>
+(Recibir pedido) --> Asesor
+
+' === FLUJO DE DISEÑO ===
+Asesor --> (Solicitar diseño)
+(Solicitar diseño) --> Diseñador
+Diseñador --> (Realizar diseño)
+(Realizar diseño) ..> (Enviar diseño a cliente) : <<include>>
+(Enviar diseño a cliente) --> Cliente
+
+' Revisión de diseño
+(Revisar diseño) ..> (Aprobar diseño) : <<extend>>
+(Revisar diseño) ..> (Rechazar diseño) : <<extend>>
+(Rechazar diseño) ..> (Solicitar ajustes) : <<extend>>
+
+(Aprobar diseño) ..> (Notificar resultado a asesor) : <<include>>
+(Rechazar diseño) ..> (Notificar resultado a asesor) : <<include>>
+(Notificar resultado a asesor) --> Asesor
+
+' === FLUJO DE COTIZACIÓN ===
+Asesor --> (Realizar cotización)
+note right of (Realizar cotización)
+  Precondición: 
+  Diseño aprobado por Cliente
+end note
+
+(Realizar cotización) ..> (Enviar cotización a cliente) : <<include>>
+(Enviar cotización a cliente) --> Cliente
+
+' Revisión de cotización
+(Revisar cotización) ..> (Aprobar cotización) : <<extend>>
+(Revisar cotización) ..> (Rechazar cotización) : <<extend>>
+(Rechazar cotización) ..> (Solicitar ajustes) : <<extend>>
+
+(Aprobar cotización) ..> (Notificar decisión a asesor) : <<include>>
+(Rechazar cotización) ..> (Notificar decisión a asesor) : <<include>>
+(Notificar decisión a asesor) --> Asesor
+
+' === FLUJO DE FABRICACIÓN ===
+Asesor --> (Asignar maestro al pedido)
+(Asignar maestro al pedido) --> Maestro
+note right of (Asignar maestro al pedido)
+  Precondición: 
+  Cotización aprobada por Cliente
+end note
+Maestro --> (Fabricar pieza)
+(Fabricar pieza) ..> (Notificar pieza terminada) : <<include>>
+(Notificar pieza terminada) --> Asesor
+
+' === FLUJO DE ENTREGA ===
+Asesor --> (Realizar control de calidad)
+(Realizar control de calidad) ..> (Entregar pieza a cliente) : <<include>>
+(Entregar pieza a cliente) --> Cliente
+
+@enduml

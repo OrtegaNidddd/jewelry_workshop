@@ -1,0 +1,47 @@
+@startuml SecuenciaAprobado
+title Diagrama de Secuencia - Flujo Aprobado (Sin Rechazos)
+
+actor Cliente
+participant Asesor
+participant Diseñador
+participant Maestro
+
+== Fase de Pedido ==
+Cliente -> Asesor: Realizar pedido
+Asesor --> Cliente: Confirmar recepción
+
+== Fase de Diseño ==
+Asesor -> Diseñador: Solicitar diseño
+activate Diseñador
+Diseñador -> Diseñador: Realizar diseño
+Diseñador -> Cliente: Enviar diseño a cliente
+deactivate Diseñador
+
+Cliente -> Cliente: Revisar diseño
+Cliente -> Asesor: Aprobar diseño
+Asesor --> Cliente: Notificar recepción de aprobación
+
+== Fase de Cotización ==
+note over Asesor: Precondición:\nDiseño aprobado
+Asesor -> Asesor: Realizar cotización
+Asesor -> Cliente: Enviar cotización a cliente
+
+Cliente -> Cliente: Revisar cotización
+Cliente -> Asesor: Aprobar cotización
+Asesor --> Cliente: Notificar recepción de decisión
+
+== Fase de Fabricación ==
+note over Asesor: Precondición:\nCotización aprobada
+Asesor -> Maestro: Asignar maestro al pedido
+
+activate Maestro
+Maestro -> Maestro: Fabricar pieza
+Maestro -> Asesor: Notificar pieza terminada
+deactivate Maestro
+
+== Fase de Entrega ==
+Asesor -> Asesor: Realizar control de calidad
+Asesor -> Cliente: Entregar pieza a cliente
+Cliente -> Cliente: Recibir pieza
+
+@enduml

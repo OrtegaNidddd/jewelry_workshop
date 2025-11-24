@@ -1,0 +1,50 @@
+@startuml Tiempo
+title Diagrama de Tiempo - Pedido
+
+robust "Cliente" as C
+concise "Asesor" as A
+concise "Disenador" as D
+concise "Maestro" as M
+
+@0
+C is EsperandoRespuesta
+A is Idle
+D is Idle
+M is Idle
+
+@5
+C is EsperandoDiseno
+A is PreparandoSolicitud
+D is Disenando
+
+@18
+C is RevisandoDiseno
+A is EsperandoAprobacion
+D is Idle
+
+@28
+C is EsperandoCotizacion
+A is Calculando
+D is Idle
+
+@40
+C is EsperandoPieza
+A is EsperandoPieza
+M is Fabricando
+
+@65
+C is EsperandoEntrega
+A is ControlCalidad
+M is Idle
+
+@75
+C is RecibiendoPieza
+A is Entregando
+M is Idle
+
+@90
+C is Cerrado
+A is Cerrado
+M is Idle
+
+@enduml

@@ -1,10 +1,8 @@
 !/sql/jewelry_workshop.sql
 !/sql/consultas.sql
-!/Documentacion/v2/Documentacion_Jewelry_Workshop_v2.md
-!/Documentacion/v2/Documentacion_Base_BD_v2.md
-!/Informes/assets/*
-/sql
-/Informes/*
-/Documentacion/v1/*
-/Documentacion/v2/*
-/ER/jewelry_workshop_v1.png
+
+/Informes/
+
+/Documentacion/*
+
+/assets/aurum/
