@@ -6,6 +6,6 @@ Plataforma web para gestionar de forma integral los pedidos en talleres de joyer
 
 ## Documentación del proyecto
 
-- Documento funcional: [Documentacion/v2/Documentacion_Jewelry_Workshop_v2.md](Documentacion/v3/Documentacion_Jewelry_Workshop_v3.md)
+- Documento funcional: [Documentacion UML](Documentacion/v3/Documentacion_Jewelry_Workshop_v3.md)
 - Diagramas UML en PlantUML (código fuente): `assets/Diagramas_Code/`
 - Informes y entregables: carpeta `assets/`
