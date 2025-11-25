@@ -1,0 +1,103 @@
+@startuml Clases
+title Diagrama de Clases - Taller de joyeria
+
+class Cliente {
+  +id: int
+  +nombre: string
+  +contacto: string
+  +solicitarPedido()
+}
+
+class Asesor {
+  +id: int
+  +nombre: string
+  +registrarPedido()
+  +asignarMaestro()
+  +calcularCotizacion()
+}
+
+class Disenador {
+  +id: int
+  +nombre: string
+  +especialidad: string
+  +realizarDiseno()
+}
+
+class Maestro {
+  +id: int
+  +nombre: string
+  +tecnica: string
+  +fabricarPieza()
+}
+
+class Pedido {
+  +id: int
+  +fecha: date
+  +estado: EstadoPedido
+  +montoEstimado: decimal
+  +registrarAprobacion()
+  +agregarNota()
+}
+
+class Diseno {
+  +id: int
+  +descripcion: string
+  +estado: EstadoAprobacion
+  +version: int
+}
+
+class Cotizacion {
+  +id: int
+  +valor: decimal
+  +validez: date
+  +estado: EstadoAprobacion
+  +actualizarTotal()
+}
+
+class Pieza {
+  +id: int
+  +material: string
+  +talla: string
+  +fechaEntrega: date
+}
+
+class Pago {
+  +id: int
+  +monto: decimal
+  +fecha: date
+  +metodo: string
+}
+
+enum EstadoPedido {
+  Registrado
+  EnDiseno
+  DisenoAprobado
+  Cotizado
+  EnFabricacion
+  Calidad
+  Entregado
+  Cerrado
+  Cancelado
+}
+
+enum EstadoAprobacion {
+  Pendiente
+  Aprobado
+  Rechazado
+  Ajustes
+}
+
+Cliente "1" -- "0..*" Pedido : realiza
+Asesor "1" -- "0..*" Pedido : gestiona >
+Disenador "1" -- "0..*" Diseno : crea >
+Maestro "1" -- "0..*" Pieza : fabrica >
+Asesor ..> Cotizacion : elabora
+Cotizacion "1" --> "0..1" Pago : cobra
+Pedido "1" o-- "1" Diseno
+Pedido "1" o-- "0..1" Cotizacion
+Pedido "1" o-- "0..1" Pieza
+Diseno --> EstadoAprobacion
+Cotizacion --> EstadoAprobacion
+Pedido --> EstadoPedido
+
+@enduml

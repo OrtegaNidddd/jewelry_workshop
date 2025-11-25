@@ -1,0 +1,95 @@
+@startuml FullActivityDiagram
+
+!define COMPACT
+
+skinparam activity {
+  BackgroundColor LightSkyBlue
+  BorderColor Black
+  FontSize 11
+}
+skinparam activityDiamond {
+  BackgroundColor Gold
+  BorderColor Black
+  FontSize 10
+}
+skinparam Padding 2
+skinparam ParticipantPadding 10
+
+title Proceso Completo de Pedido
+
+|Cliente|
+start
+:Realizar pedido;
+
+|Asesor|
+:Recibir pedido;
+:Solicitar diseño;
+
+|Diseñador|
+repeat
+  :Realizar diseño;
+  :Enviar diseño a cliente;
+  
+  |Cliente|
+  :Revisar diseño;
+  
+  if (¿Aprobar diseño?) then (Sí)
+    :Aprobar diseño;
+    |Asesor|
+    :Recibir notificación de aprobación;
+  else (No)
+    :Rechazar diseño;
+    :Solicitar ajustes;
+    |Asesor|
+    :Recibir notificación de rechazo;
+    |Diseñador|
+  endif
+repeat while (¿Diseño aprobado?) is (No) not (Sí)
+
+|Asesor|
+
+:Realizar cotización;
+
+repeat
+  :Enviar cotización a cliente;
+  
+  |Cliente|
+  :Revisar cotización;
+  
+  if (¿Aprobar cotización?) then (Sí)
+    :Aprobar cotización;
+    |Asesor|
+    :Recibir notificación de decisión;
+  else (No)
+    :Rechazar cotización;
+    :Solicitar ajustes;
+    |Asesor|
+    :Recibir notificación de decisión;
+  endif
+repeat while (¿Cotización aprobada?) is (No) not (Sí)
+
+|Asesor|
+:Asignar maestro al pedido;
+
+|Maestro|
+:Fabricar pieza;
+:Notificar pieza terminada;
+
+|Asesor|
+:Realizar control de calidad;
+
+if (¿Control aprobado?) then (Sí)
+  :Entregar pieza a cliente;
+else (No)
+  |Maestro|
+  :Corregir defectos;
+  |Asesor|
+  :Realizar control de calidad;
+  :Entregar pieza a cliente;
+endif
+
+|Cliente|
+:Recibir pieza;
+stop
+
+@enduml
