@@ -1,8 +1,34 @@
-!/sql/jewelry_workshop.sql
-!/sql/consultas.sql
+# Ignorar TODAS las carpetas completas
+/assets/Diagramas_Code/*
+/assets/Diagramas/*
 
+# Rehabilitar las carpetas para permitir excepciones
+!/assets/Diagramas_Code/
+!/assets/Diagramas/
+
+# PERMITIR solo estos archivos específicos
+!/assets/Diagramas_Code/casos_de_uso.puml
+!/assets/Diagramas_Code/secuencia_aprobado.puml
+!/assets/Diagramas_Code/secuencia_rechazo.puml
+!/assets/Diagramas_Code/clases.puml
+!/assets/Diagramas_Code/estados.puml
+!/assets/Diagramas_Code/actividades.puml
+
+!/assets/Diagramas/casos_de_uso.png
+!/assets/Diagramas/secuencia_aprobado.png
+!/assets/Diagramas/secuencia_rechazo.png
+!/assets/Diagramas/clases.png
+!/assets/Diagramas/estados.png
+!/assets/Diagramas/actividades.png
+
+# Ignorar informes completos
 /Informes/
 
-/Documentacion/v1
+# Ignorar carpetas enteras (Documentacion v1)
+/Documentacion/v1/
 
+# Ignorar archivo específico
+/Documentacion/v3/Documentacion_Jewelry_Workshop_v3.md
+
+# Ignorar todos los recursos de aurum
 /assets/aurum/
