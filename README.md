@@ -6,11 +6,11 @@ Plataforma web para gestionar de forma integral los pedidos en talleres de joyer
 
 ## Documentación del proyecto
 
-- Documento funcional: [Documentacion/v2/Documentacion_Jewelry_Workshop_v2.md](Documentacion/v2/Documentacion_Jewelry_Workshop_v2.md)
+- Documento funcional: [Documentacion UML](Documentacion/v2/Documentacion_Jewelry_Workshop_v2.md)
 - Diagramas UML en PlantUML (código fuente): `assets/Diagramas_Code/`
 - Informes y entregables: carpeta `Informes/`
 
 ## Documentación de base de datos
 
-- Documento de BD: [Documentacion/v2/Documentacion_Base_BD_v2.md](Documentacion/v2/Documentacion_Base_BD_v2.md)
-- Diagrama ER: [ER/jewelry_workshop_v2.png](ER/jewelry_workshop_v2.png)
+- Documento de BD: [Documentacion Base de Datos](Documentacion/v2/Documentacion_Base_BD_v2.md)
+- Diagrama ER: [Diagrama ER](ER/jewelry_workshop_v2.png)
